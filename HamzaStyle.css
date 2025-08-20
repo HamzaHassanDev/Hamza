@@ -1,0 +1,52 @@
+body{ 
+    margin: 0;
+    font-family: "Arimo", sans-serif;
+    background-color: #26231f;    
+
+}
+
+
+
+.background {
+  display: flex; 
+  justify-content: center;   /* يحطهم في النص بالعرض */
+  gap: 35px;                 /* مسافة بينهم */
+  margin-top: 150px;    
+  
+}
+.background a {
+    color: antiquewhite;
+    text-decoration: none;
+
+}
+
+.background a:hover {
+    color: rgba(192, 180, 180, 0.76);
+    ;
+}
+
+.text { 
+    display: flex;
+    justify-content: center; 
+
+    align-items: center;     
+    height: 60vh;        
+    margin: 0;
+    gap : 15px
+}
+.part1 {
+    color: antiquewhite;
+}
+
+.part2 {
+    color: antiquewhite
+    
+}
+.part2:hover {
+    color: black
+    
+}
+
+.part3 {
+    color: antiquewhite;
+}
