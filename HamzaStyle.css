@@ -5,70 +5,75 @@
 body {
     background-color: rgb(37, 32, 25);
     font-family: "Federant", serif;
+    margin: 0;
+    padding: 0;
 }
 
-
+/* النص الكبير */
 span {
-    color: white;
+    color: rgb(243, 238, 206);
     display: inline;
     margin-right: 15px;
     font-size: 55px;
-
 }
 
-
-.specialtext:hover{
-    color: rgb(22, 21, 21);
-    text-shadow: 5px 10px 5px;
+/* hover على نص مميز */
+.specialtext:hover {
+    color: rgb(83, 79, 60);
+    text-shadow: 5px 10px 25px;
 }
 
+/* الروابط */
 .links {
-    color: white;
+    color: rgb(243, 238, 206);
     display: inline-block;
     text-decoration: none;
     margin: 5px 70px;
     padding: 0px 5px;
     line-height: normal;
-
-}
-.links :hover {
-    color: rgb(122, 117, 117);
 }
 
+.links:hover {
+    color: rgb(83, 79, 60);
+    text-shadow: 2px 5px 15px;
+}
+
+
+/* AKA */
 .aka {
     font-size: 25px;
-    margin : 290px 0px 0px 1070px
+    margin: 290px 0px 0px 1070px;
 }
+
+/* HMZA */
 .hmza {
     font-size: 25px;
-    
-
 }
+
 .hmza:hover {
-    color: rgb(22, 21, 21);
-    text-shadow: 5ps 10px 5px;
-    
+    color: rgb(83, 79, 60);
+    text-shadow: 2px 5px 15px;
 }
 
+
+/* حركات hover */
 .hover {
-   margin-left: 550px;
-   margin-top: 50px;
-   
-    
+    margin-left: 550px;
+    margin-top: 50px;
 }
 
+/* باكجراوند */
 .backer {
-    margin: 250px 0px 0px 670px
+    margin: 250px 0px 0px 670px;
 }
 
+/* أيقونة البيت */
 .fa-house {
-    color: black;
+    color: rgb(243, 238, 206);
     font-size: 30px;
     margin-top: 400px;
 }
 
 .fa-house:hover {
-    color: gray;
-
+    color: rgb(83, 79, 60);
 }
-
