@@ -1,52 +1,74 @@
-body{ 
-    margin: 0;
-    font-family: "Arimo", sans-serif;
-    background-color: #26231f;    
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(37, 32, 25);
+    font-family: "Federant", serif;
+}
+
+
+span {
+    color: white;
+    display: inline;
+    margin-right: 15px;
+    font-size: 55px;
 
 }
 
 
-
-.background {
-  display: flex; 
-  justify-content: center;   /* يحطهم في النص بالعرض */
-  gap: 35px;                 /* مسافة بينهم */
-  margin-top: 150px;    
-  
+.specialtext:hover{
+    color: rgb(22, 21, 21);
+    text-shadow: 5px 10px 5px;
 }
-.background a {
-    color: antiquewhite;
+
+.links {
+    color: white;
+    display: inline-block;
     text-decoration: none;
+    margin: 5px 70px;
+    padding: 0px 5px;
+    line-height: normal;
 
 }
-
-.background a:hover {
-    color: rgba(192, 180, 180, 0.76);
-    ;
+.links :hover {
+    color: rgb(122, 117, 117);
 }
 
-.text { 
-    display: flex;
-    justify-content: center; 
-
-    align-items: center;     
-    height: 60vh;        
-    margin: 0;
-    gap : 15px
+.aka {
+    font-size: 25px;
+    margin : 290px 0px 0px 1070px
 }
-.part1 {
-    color: antiquewhite;
-}
-
-.part2 {
-    color: antiquewhite
+.hmza {
+    font-size: 25px;
     
+
 }
-.part2:hover {
-    color: black
+.hmza:hover {
+    color: rgb(22, 21, 21);
+    text-shadow: 5ps 10px 5px;
     
 }
 
-.part3 {
-    color: antiquewhite;
+.hover {
+   margin-left: 550px;
+   margin-top: 50px;
+   
+    
 }
+
+.backer {
+    margin: 250px 0px 0px 670px
+}
+
+.fa-house {
+    color: black;
+    font-size: 30px;
+    margin-top: 400px;
+}
+
+.fa-house:hover {
+    color: gray;
+
+}
+

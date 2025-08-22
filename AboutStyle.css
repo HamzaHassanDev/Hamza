@@ -1,10 +1,43 @@
-body{ 
-    margin: 0;
-    font-family: "Arimo", sans-serif;
-    background-color: #26231f;    
+body {
+    background-color: rgb(37, 32, 25);
+    
+    
+}
+
+
+h1 {
+    width: 300px;
+    margin: 80px auto;
+    font-family: "Federant", serif;
+    color: white;
+}
+
+
+.textlook {
+    width: 500px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 28px;
+    margin: 113px auto;
+    color: white;
+    background-color:  rgb(63, 60, 60);
+    border-radius: 15px;
+    box-shadow: 15px 15px 25px black;
+    padding: 10px 15px;
 
 }
 
-.tst {
-    color: antiquewhite;
+
+
+
+
+.fa-house {
+    color: black;
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.fa-house:hover {
+    color: gray;
+
 }
