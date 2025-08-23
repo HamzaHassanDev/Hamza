@@ -1,36 +1,48 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     background-color: rgb(37, 32, 25);
     font-family: "Federant", serif;
-    margin: 0;
-    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* النص الكبير */
-span {
-    color: rgb(243, 238, 206);
-    display: inline;
-    margin-right: 15px;
-    font-size: 55px;
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: rgb(37, 32, 25);
 }
 
-/* hover على نص مميز */
-.specialtext:hover {
-    color: rgb(83, 79, 60);
-    text-shadow: 5px 10px 25px;
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
 }
 
 /* الروابط */
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+    padding: 2vh 0;
+}
+
 .links {
     color: rgb(243, 238, 206);
-    display: inline-block;
     text-decoration: none;
-    margin: 5px 70px;
-    padding: 0px 5px;
-    line-height: normal;
+    font-size: clamp(16px, 2vw, 22px);
 }
 
 .links:hover {
@@ -38,16 +50,32 @@ span {
     text-shadow: 2px 5px 15px;
 }
 
-
-/* AKA */
-.aka {
-    font-size: 25px;
-    margin: 290px 0px 0px 1070px;
+/* النصوص */
+.intro {
+    text-align: center;
+    margin-top: 10vh;
 }
 
-/* HMZA */
+.intro h1 {
+    font-size: clamp(30px, 5vw, 55px);
+    color: rgb(243, 238, 206);
+    font-weight: normal;
+}
+
+.specialtext:hover {
+    color: rgb(83, 79, 60);
+    text-shadow: 5px 10px 25px;
+}
+
+.aka {
+    font-size: clamp(16px, 1.5vw, 25px);
+    color: rgb(243, 238, 206);
+    margin-right: 0.5rem;
+}
+
 .hmza {
-    font-size: 25px;
+    font-size: clamp(16px, 1.5vw, 25px);
+    color: rgb(243, 238, 206);
 }
 
 .hmza:hover {
@@ -55,23 +83,15 @@ span {
     text-shadow: 2px 5px 15px;
 }
 
-
-/* حركات hover */
-.hover {
-    margin-left: 550px;
-    margin-top: 50px;
-}
-
-/* باكجراوند */
-.backer {
-    margin: 250px 0px 0px 670px;
-}
-
 /* أيقونة البيت */
+footer {
+    padding: 1rem;
+    text-align: left;
+}
+
 .fa-house {
     color: rgb(243, 238, 206);
     font-size: 30px;
-    margin-top: 400px;
 }
 
 .fa-house:hover {

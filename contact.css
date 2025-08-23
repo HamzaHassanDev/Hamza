@@ -1,5 +1,6 @@
 * {
     padding-left: 10px;
+    font-family: "Federant", serif;
 }
 
 body {
@@ -7,13 +8,22 @@ body {
 }
 
 h1 {
-    color: white;
+    color: rgb(243, 238, 206);;
+    text-shadow: 3px 3px 15px rgb(83, 79, 60);;
+    margin-left: 78vb;
+
 }
+
+
 h2 {
-    color: white;
+    color: rgb(243, 238, 206);;
 }
 
 a {
+    color: rgb(243, 238, 206);;
+    
+}
 
-    color: black;
+.icon1 {
+    
 }
