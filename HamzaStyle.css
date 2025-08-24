@@ -1,99 +1,109 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 body {
     background-color: rgb(37, 32, 25);
-    font-family: "Federant", serif;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', 'Arimo', sans-serif; /* Ubuntu أولاً */
 }
 
-canvas {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background: rgb(37, 32, 25);
-}
-
+/* اللينكات */
 .container {
-    width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 100vh;
-}
-
-/* الروابط */
-.nav-links {
-    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 5vw;
-    padding: 2vh 0;
+    padding-top: 5vh;
+}
+
+.ani {
+    transition: 0.3s;
 }
 
 .links {
     color: rgb(243, 238, 206);
     text-decoration: none;
-    font-size: clamp(16px, 2vw, 22px);
+    font-size: clamp(18px, 3vw, 35px);
+    transition: 0.3s;
+    font-family: 'Ubuntu', sans-serif; /* نخلي اللينكات بخط Ubuntu */
 }
 
 .links:hover {
     color: rgb(83, 79, 60);
-    text-shadow: 2px 5px 15px;
+    transform: scale(1.2);
+    
 }
 
-/* النصوص */
-.intro {
+/* النص الرئيسي */
+.main {
+    display: block;
     text-align: center;
-    margin-top: 5vh;
+    margin-top: 30vh;
+    font-family: 'Federant', cursive; /* العنوان بخط Federant */
 }
 
-.intro h1 {
-    font-size: clamp(30px, 5vw, 55px);
+.text {
+    font-size: clamp(24px, 6vw, 60px);
     color: rgb(243, 238, 206);
-    font-weight: normal;
+    font-style: solid;
 }
 
 .specialtext:hover {
     color: rgb(83, 79, 60);
-    text-shadow: 5px 10px 25px;
+}
+
+.title-block {
+    text-align: center;
+}
+
+/* aka + حمزه */
+.aka-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.aka-container {
+    margin-top: 8px;
+    font-size: calc(clamp(14px, 2.5vw, 22px) + 20px);
+    color: rgb(243, 238, 206);
+    display: inline-flex;
+    gap: 6px;
+    text-align: right;
+    font-family: 'Ubuntu', sans-serif; /* aka + حمزه بخط Ubuntu */
 }
 
 .aka {
-    font-size: clamp(20px, 1.5vw, 25px);
-    color: rgb(243, 238, 206);
-    margin-right: 0.5rem;
-}
-
-.hmza {
-    font-size: clamp(15px, 1.5vw, 25px);
-    color: rgb(243, 238, 206);
+    margin-right: 4px;
 }
 
 .hmza:hover {
     color: rgb(83, 79, 60);
-    text-shadow: 2px 5px 15px;
 }
 
 /* أيقونة البيت */
-footer {
-    padding: 1rem;
-    text-align: left;
-}
-
 .fa-house {
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+    font-size: clamp(18px, 4vw, 32px);
     color: rgb(243, 238, 206);
-    font-size: 30px;
+    transition: 0.3s;
 }
 
 .fa-house:hover {
+    transform: scale(1.2);
     color: rgb(83, 79, 60);
+}
+
+/* تحسين خاص للموبايل */
+@media (max-width: 400px) {
+    .main {
+        margin-top: 20vh;
+    }
+    .aka-container {
+        font-size: calc(14px + 10px);
+    }
+    .fa-house {
+        font-size: 22px;
+        left: 10px;
+        bottom: 10px;
+    }
 }
